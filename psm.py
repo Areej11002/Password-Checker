@@ -88,7 +88,7 @@ def check_password_strength(password):
         with st.expander("🔍 **Improve Your Password** "):
             for item in feedback:
                 st.write(item)
-password = st.text_input("Enter your password:", help="Ensure your password is strong 🔐")
+password = st.text_input("Enter your password:", type="password", help="Ensure your password is strong 🔐")
 
 #Button Working
 if st.button("Check Strength"):
